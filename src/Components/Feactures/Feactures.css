@@ -1,0 +1,36 @@
+.feactures_gid{
+    grid-template-columns: repeat(4, 1fr);
+}
+.feature_img{
+    width: 60px;
+    margin-bottom: 1.25rem;
+}
+.features_shape{
+   width: 120px;
+   right: 1.25rem;
+    position: absolute;
+    top: 3rem;
+    opacity: 0.2;
+}
+.feactures_item{
+    background-color: var(--container-color);
+    padding: 2rem;
+    border-radius: var(--radius);
+    position: relative;
+    transition: 0.5s var(--transition);
+}
+.feactures_item::before{
+    content: '';
+    position: absolute;
+    inset: 0.75rem;
+    border: 2px solid var(--first-color);
+    opacity: 0.2;
+    border-radius: inherit;
+}
+.feature_title{
+    font-size: var(--h3-font-size);
+    margin-bottom: 0.625rem;
+}
+.feactures_item:hover{
+    transform: translateY(-0.5rem);
+}
